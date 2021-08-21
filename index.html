@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>타자연습</h1>
+    <h2>최고점수 : <span id="bestScore"></span></h2>
+    <h2>현재점수 : <span id="score"></span></h2>    
+    <h2>문제 : <span id="problem"></span></h2>
+    <h2>입력값 : <span id="inputVal"></span></h2>
+    <input type="text" id='input1' onkeypress="if(window.event.keyCode==13){press();}">
+    <br> 
+    <button onclick="init();">시작</button>
+    <script src="script.js"></script>
+    <h3>남은 시간 : <span id="leftTime"></span></h3>
+</body>
+</html>
